@@ -48,7 +48,6 @@ No sensitive identifiers are visible. (Image 1)
 \
 \
 **Step 2 — Create the incident notification rule**
---------------------------------------------------
 
 I click **Add incident notification rule**.
 
