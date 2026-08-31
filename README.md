@@ -44,7 +44,7 @@ Incidents category\
 **0 items**\
 Add incident notification rule
 
-No sensitive identifiers are visible. (Image 1)\
+No sensitive identifiers are visible. (Image 1)
 \
 \
 **Step 2 — Create the incident notification rule**
@@ -150,11 +150,11 @@ The incident notification rule was created successfully.
 
 ### Incident notification configuration completed
 
-Medium and High incidents covered\
+Medium and High incidents covered
 Custom detection, Defender XDR, and Manual sources included\
-Duplicate incident emails limited\
-Organization name and direct portal link included\
-Recipient delivery verified through a test email (Image 12)\
+Duplicate incident emails limited
+Organization name and direct portal link included
+Recipient delivery verified through a test email (Image 12)
 \
 \
 Step 4 — Locate Action and Threat Analytics notifications
@@ -165,7 +165,7 @@ The incident rule is saved and visible as **1 item**. The tenant currently displ
 
 \
 \
-Step 4 — Attempt a controlled manual incident test
+Step 5 — Attempt a controlled manual incident test
 --------------------------------------------------
 
 1.  I Click **Incidents** in the narrow left shortcut bar.
@@ -180,24 +180,7 @@ Step 4 — Attempt a controlled manual incident test
 
 If manual incident creation is supported, a harmless Medium-severity test incident will be created to validate the real notification flow. (Images 14, 15, 16, and 17)
 
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
+
 There is **plus (+) button** in the incident toolbar. This is likely the manual incident-creation function required for the validation test. I click the blue **+** above the incident table.(Image 18)\
 The portal supports creating a manual alert and optionally correlating it into an incident. This is exactly the controlled validation needed.
 
@@ -209,28 +192,22 @@ The portal supports creating a manual alert and optionally correlating it into a
 
 **Recommended actions:** Confirm that the incident is created, verify receipt of the notification email, document the result, and then classify and resolve the test incident. (Image 18)
 
-\
-\
-\
+
 Then I open the **Category** dropdown.\
 I select **Others**.
 
 That is the most accurate category because this is a notification-validation test, not evidence of ransomware, malware, execution, or another real attack tactic. Selecting a threat category would create misleading incident data. (Image 19 and 20)\
-\
-\
+
 
 After selecting **Others**, I click **Next**.\
 **Impacted assets** is required, so the wizard cannot proceed without one. A production identity or the administrator account should not be used. Then I click Add assets. (Image 21)
 
-\
-\
-\
+
 I click the **Entity name or ID** field and search for: SOC Test User\
 This is the dedicated lab identity created earlier, so it is the safest available impacted asset for the simulated alert.\
 The **SOC Test User** is selected as the impacted asset. I leave **Related evidence** empty because this is a controlled notification test. (Image 22)
 
-\
-\
+
 I click next.\
 **Incident correlation\**
 SOC Test User appears in the field.\
@@ -246,10 +223,7 @@ I select **User** as the entity type.\
 I search for **SOC Test User**.\
 I select the matching result from the list\
 I leave **Related evidence** empty.(Image 24)\
-\
-\
-\
-\
+
 I select **AccountUpn**.
 
 In **Identifier value**, I enter the SOC Test User’s complete sign-in address:
@@ -261,8 +235,7 @@ The asset was accepted, and I **create a new incident**.
 
 I eave **Exclude this incident from incident correlation** unchecked. Although this is a controlled test, keeping normal correlation enabled lets the lab validate the standard Defender XDR incident workflow. (Image 25)
 
-\
-\
+
 I click **Next**.\
 The review confirms the controlled alert is configured correctly:
 
@@ -273,16 +246,13 @@ Impacted asset: SOC Test User\
 A new incident will be created\
 Normal incident correlation remains enabled (Images 26 and 27)
 
-\
-\
 
 I click **Submit**.\
 The incident appears in the incident queue.
 
 A real incident-notification email arrives.\
 The test incident is classified and resolved safely. the controlled alert was created and linked to **Incident 1**. (Image 28)\
-\
-\
+
 I click **Incident 1** under **View incident**.\
 The live incident is confirmed:
 
@@ -293,15 +263,12 @@ Classification: **Unclassified**\
 Active alerts: **1/1**\
 Impacted asset: **SOC Test User**\
 Alert title clearly identifies the controlled lab test (Image 29 and 30)\
-\
-\
-\
-\
+
 I check my Gmail inbox used in the notification rule. I look for a new Defender incident notification—not the earlier **test notification**.
 
 The real email notification was delivered for **Incident 1**, confirming the rule works end to end: **Manual alert → Medium-severity incident → notification rule match → email delivered** (Image 31)
 
-\
+
 Now I return to the Defender incident tab. I close the **Tasks** panel, and I click the current **Active** status near the incident title.\
 I need to return to **Incident 1** and classify it as **Informational** which it was a controlled notification test.\
 On the **Incident 1** page, I click **Unclassified** near the top.\
@@ -319,9 +286,7 @@ I set **Classification** to **Informational, expected activity**.
 
 1.  Then I select the **three dots (…)** beside the incident title and choose **Manage incident**.\
     I click **Unclassified**. That opens the incident classification controls. (Image 32)\
-    \
-    \
-    \
+    
     Then I click mange inciden.\
     I leave **Severity** as Medium.
 
