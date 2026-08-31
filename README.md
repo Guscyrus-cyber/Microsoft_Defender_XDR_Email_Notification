@@ -45,8 +45,7 @@ Incidents category\
 Add incident notification rule
 
 No sensitive identifiers are visible. (Image 1)
-\
-\
+
 **Step 2 — Create the incident notification rule**
 
 I click **Add incident notification rule**.
@@ -58,8 +57,7 @@ The wizard has four stages: Basics, Notification settings, Recipients, and Revie
 
 This scope prioritizes incidents that normally require timely analyst attention while avoiding unnecessary low-severity notification volume. (Images 2)
 
-\
-\
+
 I click **Next**. The notification settings allow control over email frequency, context, source, and severity.
 
 I select these three options:
@@ -69,10 +67,7 @@ I select these three options:
 **Include tenant-specific portal link** — allows the analyst to open the incident directly from the email.
 
 Then I click the **Sources** dropdown. The source list separates incidents by security service and detection origin. (Images 3 and 4)\
-\
-\
-\
-\
+
 Then I select the top-level checkbox:\
 **Microsoft Defender XDR**
 
@@ -85,14 +80,10 @@ Manual
 Including **Manual** is useful because a controlled manual test incident may trigger the rule. (Image 5)
 
 I close the Sources dropdown, then I open **Alert severity**.\
-\
-\
-\
-\
-\
+
 I select:
 
-**Medium**\
+**Medium**
 **High**
 
 I leave **Informational** and **Low** unchecked to reduce notification noise.
@@ -101,8 +92,7 @@ The sources already show Custom detection, Defender XDR, and Manual, so no addit
 
 I click **Next**. (Image 6)
 
-\
-\
+
 I enter my personal email address whose inbox can be checked immediately because the Defender administrator account may not have an Exchange mailbox license.
 
 1.  I enter the monitored email address.
@@ -117,8 +107,7 @@ I enter my personal email address whose inbox can be checked immediately because
 
 The recipient was added and the test email was sent. (Image 7)
 
-\
-\
+
 The test succeeded. The email confirms:
 
 Microsoft Defender can deliver email to the configured recipient.\
@@ -128,7 +117,7 @@ The message came from Microsoft Defender’s notification service.
 
 1.  The test verifies email delivery, but it does not yet prove that a real incident triggers the rule. That will be tested after the rule is saved. (Image 8, 9)\
 
-**Step 3- Create notification rule:**\
+**Step 3- Create notification rule:**
 \
 I Return to the Defender tab.\
 I click **Next** on the Recipients page.
@@ -143,29 +132,22 @@ I Click **Submit**.(Images 10 and 11)
 
 > 
 
-\
-\
 The incident notification rule was created successfully.
 
 ### Incident notification configuration completed
 
 Medium and High incidents covered
-Custom detection, Defender XDR, and Manual sources included\
+Custom detection, Defender XDR, and Manual sources included
 Duplicate incident emails limited
 Organization name and direct portal link included
 Recipient delivery verified through a test email (Image 12)
-\
-\
-Step 4 — Locate Action and Threat Analytics notifications
-------------------------------------------------------------
+
+**Step 4 — Locate Action and Threat Analytics notifications**
 
 I click **Done** to return to the Email notifications page. This is necessary to determine whether **Actions** and **Threat analytics** appear as additional tabs, sections, or tenant-dependent options. No menu exploration is required.\
 The incident rule is saved and visible as **1 item**. The tenant currently displays only the **Incidents** notification category. **Actions** and **Threat analytics** are not available on this page. Their notification options may depend on additional Defender workloads, licensing, and endpoint activation. Since MDE has not been onboarded, those portions cannot be configured at this stage and should be documented as deferred. (Image 13)
 
-\
-\
-Step 5 — Attempt a controlled manual incident test
---------------------------------------------------
+**Step 5 — Attempt a controlled manual incident test**
 
 1.  I Click **Incidents** in the narrow left shortcut bar.
 
